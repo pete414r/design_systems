@@ -1,0 +1,47 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+</head>
+<body>
+  {{.Params.myVar}}
+
+     {{ partial "header" (dict "Kind" .Kind "Template" "Single") }}
+<p>This is a tekst put into all single pages</p>
+     <div style="margin:25px;">
+          <h1>{{.Title}}</h1>
+          <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
+          <div style="color:grey; font-size:16px;">{{if .Params.author}}Author: {{.Params.Author}}{{end}}</div>
+          <div style="font-size:18px;">{{.Content}}</div>
+     </div>
+     <a href=".../dir1/dir2">link til list home pages</a>
+     {{ partial "footer" . }}
+
+     {{ $var4 := "dog"}}
+     {{ $var5 := "cat"}}
+     {{if eq $var4 $var5}}
+     true
+     {{else}}
+     false
+     {{end}}
+
+     eq equel to
+     lt les then
+     le les then equel to
+     gt grater than
+     ge grater than equel to
+     not not donyt engage
+     Copyright Holder All Rights Reserved.
+
+     {{ $var1 := "1"}}
+     {{ $var2 := "2"}}
+     {{ $var3 := "3"}}
+     {{if and (lt $var1 $var2) (lt $var1 $var3)}}
+     True
+     {{else}}
+     False
+     {{end}}
+</body>
+</html>

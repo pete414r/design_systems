@@ -1,0 +1,8 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Prf doc statisk site"
+theme = "ga-hugo-theme"
+[taxonomies]
+tag = "tag3"
+category = "categories"
+mood = "moods"
