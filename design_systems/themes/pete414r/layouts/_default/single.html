@@ -5,7 +5,7 @@
             <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
 
             <div class="sub-header">
-                {{ .Date.Format (.Site.Params.dateform | default "Febraur 2018") }} · {{ .ReadingTime }} minute read
+              <div class="date" title='{{ .Date.Format "Mon Jan 2 2006 15:04:05 MST" }}'>{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} minute read </div>
             </div>
 
             <article class="entry-content">

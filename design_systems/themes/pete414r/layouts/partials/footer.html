@@ -14,17 +14,17 @@
                 {{ if .Site.Params.copyright }}
                 Copyright &copy; {{ now.Format "2006" }} {{ .Site.Title }}.
                 {{ end }}
-                {{ if .Site.Params.credit }}
-                Theme developed by <a href="https://tomanistor.com">Toma Nistor</a>.
-                {{ end }}
             </div>
             {{ end }}
+
             <!-- Script -->
-            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
             {{ if .IsHome }}
             <script src="/scripts/{{ if .Site.Params.cacheBustJS }}{{ index .Site.Data.cachedAssets "index.js" }}{{ else }}index.js{{ end }}" type="text/javascript"></script>
-            {{ if .Site.Params.ajaxFormspree }}
+
             <!-- Form AJAX -->
+            {{ if .Site.Params.ajaxFormspree }}
             <script>
               $("#form-contact").on("submit", function(e) {
                   e.preventDefault();
@@ -61,19 +61,15 @@
                           });
                       }
                   });
-
               });
             </script>
             {{ end }}
+
             {{ else }}
             <script src="/scripts/{{ if .Site.Params.cacheBustJS }}{{ index .Site.Data.cachedAssets "main.js" }}{{ else }}main.js{{ end }}" type="text/javascript"></script>
             {{ end }}
-            {{ else }}
+
             <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
-            {{ end }}
-            {{ else }}
-            <script src="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"></script>
-            {{ end }}
         </footer>
     </body>
 </html>

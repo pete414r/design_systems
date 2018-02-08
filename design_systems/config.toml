@@ -4,6 +4,7 @@ tags = ["hugo", "design", "blog"]
 languageCode = "dk"
 config = "config.toml"
 theme = "pete414r"
+publishDir = "docs"
 
 [Params]
     author = "Peter Frankild"
@@ -34,8 +35,3 @@ theme = "pete414r"
         name = "OM"
         url  = "/#om"
         weight = 4
-        [taxonomies]
-        tag = "tags"
-        category = "categories"
-        mood = "moods"
-        myVar = "myValue"
