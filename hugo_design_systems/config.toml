@@ -1,0 +1,42 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "PRF"
+theme = "pete414r"
+publishDir = "public"
+
+[Params]
+    author = "Peter Frankild"
+    description = "Kea asignment Design systems"
+    logoBig = "images/pete414r_logo.png"
+    logoSmall = "images/pete414r_logo.png"
+    favicon = "favicon.ico"
+    opengraphImage = "images/pete414r.png"
+    twitter = "peter414r"
+    linkedin = "peter414r"
+    github = "peter414r"
+    email = "pete414r@stud.kea.dk"
+    copyright = true
+
+    [taxonomies]
+    tag = "tags"
+    category = "categories"
+    mood = "moods"
+
+    [[menu.main]]
+    name = "HOME"
+    url  = "/#home"
+    weight = 1
+
+    [[menu.main]]
+    name = "BLOG"
+    url  = "/#blog"
+    weight = 2
+
+    [[menu.main]]
+    name = "KONTAKT"
+    url  = "/#kontakt"
+    weight = 3
+    [[menu.main]]
+    name = "OM"
+    url  = "/#om"
+    weight = 4

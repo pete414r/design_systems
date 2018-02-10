@@ -1,5 +1,5 @@
 ---
-title: "Test2"
+title: "blog2"
 date: 2018-02-05T12:10:35+01:00
 draft: true
 author: "Peter"

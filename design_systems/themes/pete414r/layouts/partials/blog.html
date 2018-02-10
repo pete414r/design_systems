@@ -10,6 +10,10 @@
                         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                         <div class=sub-header>
                           <div class="date" title='{{ .Date.Format "Mon Jan 2 2006 15:04:05 MST" }}'>{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} minute read </div>
+                          <div style="color:lightred; font-size:16px; font-family:Comic Sans MS;">{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+                          <div style="color:lightblu; font-size:16px; font-family:Calibri;">{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+                          <div style="color:grey; font-size:16px; font-family:Times New Roman;">{{ if .Params.moods }}<strong>Moods:</strong> {{range .Params.moods}}<a href="{{ "/moods/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+
                         </div>
                     </article>
                 {{ end }}

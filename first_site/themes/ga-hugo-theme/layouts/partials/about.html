@@ -1,0 +1,7 @@
+{{ $directory := "content/" }}
+{{ $filename := "about.md" }}
+{{ if (where (readDir $directory) "Name" $filename) }}
+<section class="about" id="about">
+  
+</section>
+{{ end }}

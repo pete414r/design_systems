@@ -27,6 +27,8 @@
             {{ if .Site.Params.ajaxFormspree }}
             <script>
               $("#form-contact").on("submit", function(e) {
+
+                	console.log("start tid");
                   e.preventDefault();
 
                   // form values
@@ -63,13 +65,26 @@
                   });
               });
             </script>
-            {{ end }}
 
+  <script>
+  function openNav() {
+
+	console.log("start tid");
+      document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
+  {{ end }}
             {{ else }}
             <script src="/scripts/{{ if .Site.Params.cacheBustJS }}{{ index .Site.Data.cachedAssets "main.js" }}{{ else }}main.js{{ end }}" type="text/javascript"></script>
             {{ end }}
-
+  {{ else }}
             <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+{{ end }}
         </footer>
     </body>
 </html>

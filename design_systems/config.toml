@@ -4,7 +4,7 @@ tags = ["hugo", "design", "blog"]
 languageCode = "dk"
 config = "config.toml"
 theme = "pete414r"
-publishDir = "docs"
+publicDir = "docs"
 
 [Params]
     author = "Peter Frankild"
@@ -19,15 +19,21 @@ publishDir = "docs"
     email = "pete414r@stud.kea.dk"
     copyright = true
 
+    [taxonomies]
+    tag = "tags"
+    category = "categories"
+    mood = "moods"
+
     [[menu.main]]
         name = "HOME"
         url  = "/#home"
         weight = 1
-[[menu.main]]
+    [[menu.main]]
     name = "BLOG"
     url  = "/#blog"
     weight = 2
-[[menu.main]]
+
+    [[menu.main]]
     name = "KONTAKT"
     url  = "/#kontakt"
     weight = 3

@@ -7,31 +7,18 @@ tag = "tags"
 category = "categories"
 mood = "moods"
 [[menu.main]]
-name                   = "Forside"
-weight                 = -130
-identifier             = "forside"
-url                    = "/forside/"
-
+    name = "HOME"
+    url  = "/#home"
+    weight = 1
 [[menu.main]]
-name                   = "Blog"
-weight                 = -120
-identifier             = "blog"
-url                    = "/blog/"
-
+name = "BLOG"
+url  = "/#blog"
+weight = 2
 [[menu.main]]
-name                   = "Om"
-weight                 = -110
-identifier             = "about"
-url                    = "/about/"
-
+name = "KONTAKT"
+url  = "/#kontakt"
+weight = 3
 [[menu.main]]
-name                   = "Kontkt"
-weight                 = -100
-identifier             = "code"
-url                    = "/code/"
-
-[[menu.main]]
-name                   = "Portfolio"
-weight                 = -100
-identifier             = "portfolio"
-url                    = "/portfolio/"
+    name = "OM"
+    url  = "/#om"
+    weight = 4
