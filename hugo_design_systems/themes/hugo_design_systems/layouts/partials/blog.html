@@ -1,0 +1,22 @@
+<div class="diagram_container">
+{{ range .Site.Content.blog}}
+<div class ="column_and_name_container">
+
+  <p class="tekst-i-container">{{ .navn }}</p>
+
+
+ <div style="color:grey; font-size:16px; font-family: arial;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
+ <div style="color:grey; font-size:16px; font-family: arial;">{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+ <div style="color:grey; font-size:16px; font-family: arial;">{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+ <div style="color:grey; font-size:16px; font-family: arial;">{{ if .Params.moods }}<strong>Moods:</strong> {{range .Params.moods}}<a href="{{ "/moods/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+
+  </div>
+{{ end }}
+ </div>
+ {{ partial "header" (dict "Kind" .Kind "Template" "List") }}
+     {{.Content}}
+
+
+
+     {{ end }}
+     {{ partial "footer" . }}
