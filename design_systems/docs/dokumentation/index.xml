@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dokumentation on My New Hugo Site</title>
+    <title>Dokumentation on Hugo design systems</title>
     <link>http://systematik.siavonbulow.dk/dokumentation/</link>
-    <description>Recent content in Dokumentation on My New Hugo Site</description>
+    <description>Recent content in Dokumentation on Hugo design systems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Feb 2018 08:52:44 +0100</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Tue, 06 Feb 2018 15:32:48 +0100</pubDate>
       
       <guid>http://systematik.siavonbulow.dk/dokumentation/lightbox/</guid>
-      <description>Her vises et eksempel på brugen af Lightbox
-
-[![bjerge](/img/yellowstone.jpg)](/img/yellowstone.jpg)</description>
+      <description>Lightbox i theme, klik på billedet  [![campus](/img/pete414r.jpg)](/img/pete414r.jpg)</description>
     </item>
     
     <item>
@@ -28,9 +26,9 @@
       <pubDate>Thu, 01 Feb 2018 08:53:38 +0100</pubDate>
       
       <guid>http://systematik.siavonbulow.dk/dokumentation/typografi/</guid>
-      <description> I mit framework har jeg valgt at bruge en font der hedder Lora sans serif til overskrifter og brødtekst.
-Curabitur vehicula metus nibh, at consectetur massa vehicula id. Vivamus tristique ante ut erat porttitor, in mollis libero molestie. Fusce turpis est, viverra eu pharetra sit amet, cursus vitae erat. Curabitur malesuada sem erat, ut mollis massa ullamcorper nec.
-Typografisk hierarki Overskrift 1 Overskrift 1 Overskrift 1 Overskrift 1 Overskrift 1 Overskrift 1 </description>
+      <description>Play, Arial sans serif til overskrifter og brødtekst.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare id leo ac cursus. Mauris consequat pulvinar velit vel rhoncus.
+Typografisk hierarki</description>
     </item>
     
     <item>
@@ -39,7 +37,9 @@ Typografisk hierarki Overskrift 1 Overskrift 1 Overskrift 1 Overskrift 1 Overskr
       <pubDate>Thu, 01 Feb 2018 08:53:22 +0100</pubDate>
       
       <guid>http://systematik.siavonbulow.dk/dokumentation/farver/</guid>
-      <description>I dette framework kan du se hvilke farver jeg har anvendt.</description>
+      <description>Farver i themet
+Primære farver
+Sekundære farver</description>
     </item>
     
     <item>
@@ -48,10 +48,10 @@ Typografisk hierarki Overskrift 1 Overskrift 1 Overskrift 1 Overskrift 1 Overskr
       <pubDate>Thu, 01 Feb 2018 08:53:22 +0100</pubDate>
       
       <guid>http://systematik.siavonbulow.dk/dokumentation/buttons/</guid>
-      <description>I dette framework kan du lave knapper ved at tilføje classen Buttons
-&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;btns&amp;quot;&amp;gt;knaptekst&amp;lt;/a&amp;gt;
+      <description>Tilføj classen buttons i theme
+&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;btns&amp;quot;&amp;gt;knaptxt&amp;lt;/a&amp;gt;
 Resultatet giver en knap som følgende:
-Knaptekst</description>
+Knaptxt</description>
     </item>
     
   </channel>

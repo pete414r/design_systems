@@ -1,20 +1,22 @@
-/*Variables*/
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+/*generalt*/
+@import url("https://fonts.googleapis.com/css?family=play");
 body {
-  font-family: "Lora", sans-serif;
+  position: relative;
+  width: 94%;
+  font-family: "play", sans-serif;
   font-weight: 400;
   line-height: 1.45;
   color: #333;
-  background-color: antiquewhite; }
+  background-color: whitesmoke; }
 
-/*Menu*/
+
 span {
   margin-left: 20px; }
 
 .header {
   margin-bottom: 10px;
   margin-top: 5px; }
-
+/*navigation*/
 .sidenav {
   height: 100%;
   width: 0;
@@ -22,7 +24,7 @@ span {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #000;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px; }
@@ -46,61 +48,38 @@ span {
   margin-left: 50px; }
 
 @media screen and (max-height: 450px) {
+  /*navigation*/
   .sidenav {
     padding-top: 15px; }
 
   .sidenav a {
     font-size: 18px; } }
-/*Knapper*/
+/*form*/
 .btns {
-  background-color: #4CAF50;
+  background-color: green;
   padding: 0.4em 0.6rem;
   border-radius: 5px;
   margin-left: 110px; }
 
 .btns:hover {
-  background-color: #45a049; }
+  background-color: lightgreen; }
 
 a {
   text-decoration: none;
-  color: white; }
-
-/*Billeder*/
+  color: "#404040"; }
+/*billeder*/
 img {
   width: 380px;
   height: auto;
   margin-bottom: 20px; }
-
-/*Datavisualisering*/
-.diagram_container {
-  margin-top: 0vw;
-  transform: rotate(90deg); }
-
-.column_and_name_container {
-  margin: 0;
-  padding: 0; }
-
-.column_and_name_container p {
-  margin: 0;
-  padding: 0;
-  display: inline-block; }
-
-.column_and_name_container svg {
-  display: inline-block;
-  transform: rotate(180deg); }
-
-/*Typografi*/
+  /*generalt*/
 html {
   font-size: calc(0.75em + 1vw);
-  /*font-size: 1.425em;*/ }
-
+ }
+/*typografi*/
 p {
   margin-bottom: 1.3em;
-  font-size: 1em;
-  /*padding-left: 20px;*/ }
-
-.kontakt {
-  padding-left: 15px; }
+  font-size: 1em;}
 
 h1, h2, h3, h4 {
   margin: 0.5em 0 0.5em;
@@ -112,12 +91,6 @@ h1 {
   font-size: 2.998em;
   color: cornflowerblue;
   padding-left: 0px; }
-
-.home {
-  padding-left: 110px; }
-
-.om {
-  padding-left: 150px; }
 
 h2 {
   font-size: 2.5em;
@@ -131,9 +104,19 @@ h4 {
 
 small, .font_small {
   font-size: 0.707em; }
+  /*sider*/
+  .home {
+    padding-left: 110px; }
 
-/*Media queries til tablet  - 768px v 16px font*/
-@media only screen and (min-width: 48em) {
+  .om {
+    padding-left: 150px; }
+@media only screen and (min-width: 768px) {
+  /*generalt*/
+  .home {
+    padding-left: 110px; }
+
+  .om {
+    padding-left: 150px; }
   html {
     font-size: calc(0.80em + 1.2vw); }
 
@@ -143,7 +126,48 @@ small, .font_small {
   img {
     width: 100%;
     height: auto; }
+    /*form*/
+    .home {
+      padding-left: 110px; }
 
+    .om {
+      padding-left: 150px; }
+  .btns_anim {
+    top:60vw;
+    	z-index: 1;
+    	position: absolute;
+    	text-align: center;
+    	-webkit-animation: anim_kf 1s infinite linear;
+    	animation: anim_kf 1s infinite linear;
+    }
+    @-webkit-keyframes anim_kf {
+    	0% {-webkit-transform: scale(1);
+    		transform: scale(1);}
+    	50% {-webkit-transform: scale(0.95);
+    		transform: scale(0.95);}
+    	100% {-webkit-transform: scale(1);
+    		transform: scale(1);}
+    	50% {-webkit-transform: scale(0.95);
+    		transform: scale(0.95);}}
+    @keyframes anim_kf {
+    	0% {
+    		-webkit-transform: scale(1);
+    		transform: scale(1);
+    	}
+    	50% {
+    		-webkit-transform: scale(0.95);
+    		transform: scale(0.95);
+    	}
+    	100% {
+    		-webkit-transform: scale(1);
+    		transform: scale(1);
+    	}
+    	50% {
+    		-webkit-transform: scale(0.95);
+    		transform: scale(0.95);
+    	}
+    }
+    /*form*/
   .btns {
     margin-left: 240px; }
 
@@ -168,8 +192,14 @@ small, .font_small {
   label {
     cursor: default;
     font-size: 24px; } }
-/*Media queries til mindre computere  - 1024px v 16px font*/
-@media only screen and (min-width: 64em) {
+
+@media only screen and (min-width: 992px) {
+  /*generalt*/
+  .home {
+    padding-left: 110px; }
+
+  .om {
+    padding-left: 150px; }
   html {
     font-size: calc(0.9em + 1.2vw); }
 
@@ -179,7 +209,7 @@ small, .font_small {
   img {
     width: 100%;
     height: auto; }
-
+/*form*/
   .btns {
     margin-left: 270px; }
 
@@ -201,8 +231,14 @@ small, .font_small {
   label {
     cursor: default;
     font-size: 24px; } }
-/*Media queries til laptop/desktop  - 1200px v 16px font*/
-@media only screen and (min-width: 75em) {
+
+@media only screen and (min-width: 1200px) {
+  /*generalt*/
+  .home {
+    padding-left: 110px; }
+
+  .om {
+    padding-left: 150px; }
   html {
     font-size: calc(1em + 1.3vw); }
 
@@ -217,7 +253,7 @@ small, .font_small {
   img {
     width: 100%;
     height: auto; }
-
+/*form*/
   .btns {
     margin-left: 200px; }
 
@@ -226,7 +262,12 @@ small, .font_small {
 
   h1 {
     font-size: 2.7em; }
+    /*sider*/
+    .home {
+      padding-left: 110px; }
 
+    .om {
+      padding-left: 150px; }
   .home {
     padding-left: 210px; }
 
@@ -236,12 +277,19 @@ small, .font_small {
   .om {
     padding-left: 270px; }
 
+    .home {
+      padding-left: 110px; }
+
+    .om {
+      padding-left: 150px; }
+        /*typografi*/
   p {
     font-size: 0.6em; }
-
+/*
   .kontakt {
     padding-left: 90px; }
-
+*/
+    /*form*/
   input[type=text],
   input[type=email],
   select,
@@ -254,7 +302,7 @@ small, .font_small {
 
   .fb-comments {
     margin-left: 40px; } }
-/*Formular*/
+/*Form*/
 input[type=text],
 input[type=email],
 select,
@@ -267,7 +315,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-  font-family: "Lora", sans-serif; }
+  font-family: "arial", sans-serif; }
 
 textarea {
   height: 200px; }
@@ -279,24 +327,21 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: "Lora", sans-serif; }
+  font-family: "arial", sans-serif; }
 
 input[type=submit]:hover {
   background-color: #45a049; }
-
+    /*generalt*/
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: whitesmoke;
   padding: 30px;
   max-width: 800px;
   margin: 0 auto; }
 
 .hidden {
   display: none; }
-
-#formfailure {
-  background-color: red;
-  padding: 1em; }
+    /*list*/
 
 .cooking {
   position: relative;
@@ -493,6 +538,3 @@ input[type=submit]:hover {
   100% {
     transform: scale(1, 1);
     opacity: .25; } }
-/*# sourceMappingURL=style.css.map */
-
-/*# sourceMappingURL=style.css.map */

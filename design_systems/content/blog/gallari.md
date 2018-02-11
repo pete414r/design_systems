@@ -9,6 +9,6 @@ myVar: "myValue for this side"
 ---
 
 
-<img src="/img/pete414r.png">
-<p> !  [alt tekst] ----> (billede png)  <P>
-![Blog billede] (../img/pete414r.png)
+<img src="/img/pete414r.jpg">
+<p> !  [alt tekst] ----> (billede jpg)  <P>
+![Blog billede] (../img/pete414r.jpg)

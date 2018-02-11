@@ -13,6 +13,51 @@
   </url>
   
   <url>
+    <loc>http://systematik.siavonbulow.dk/blog/blog1/</loc>
+    <lastmod>2018-02-05T12:10:35+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/blog/blog2/</loc>
+    <lastmod>2018-02-05T12:10:35+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/blog/blog3/</loc>
+    <lastmod>2018-02-05T12:10:35+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/blog/gallari/</loc>
+    <lastmod>2018-02-05T11:06:21+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/blog/post1/</loc>
+    <lastmod>2018-02-05T11:06:21+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/blog/post2/</loc>
+    <lastmod>2018-02-05T10:57:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/blog/post3/</loc>
+    <lastmod>2018-02-05T10:38:35+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/blog/post9/</loc>
+    <lastmod>2018-02-05T10:36:48+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/blog/post8/</loc>
+    <lastmod>2018-02-05T09:58:48+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://systematik.siavonbulow.dk/</loc>
     <lastmod>2018-02-01T09:02:12+01:00</lastmod>
   </url>
@@ -33,6 +78,11 @@
   </url>
   
   <url>
+    <loc>http://systematik.siavonbulow.dk/blog/</loc>
+    <lastmod>2018-02-01T08:52:44+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://systematik.siavonbulow.dk/dokumentation/</loc>
     <lastmod>2018-02-01T08:52:44+01:00</lastmod>
   </url>
@@ -43,12 +93,62 @@
   </url>
   
   <url>
+    <loc>http://systematik.siavonbulow.dk/categories/cat3/</loc>
+    <lastmod>2018-02-05T12:10:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://systematik.siavonbulow.dk/categories/</loc>
+    <lastmod>2018-02-05T12:10:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/moods/happy/</loc>
+    <lastmod>2018-02-05T12:10:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/moods/</loc>
+    <lastmod>2018-02-05T12:10:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/tags/tag2/</loc>
+    <lastmod>2018-02-05T12:10:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/tags/tag3/</loc>
+    <lastmod>2018-02-05T12:10:35+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://systematik.siavonbulow.dk/tags/</loc>
+    <lastmod>2018-02-05T12:10:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/categories/tekst-post/</loc>
+    <lastmod>2018-02-05T12:10:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/moods/upbeat/</loc>
+    <lastmod>2018-02-05T12:10:35+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://systematik.siavonbulow.dk/categories/video-og-tekst/</loc>
+    <lastmod>2018-02-05T11:06:21+01:00</lastmod>
     <priority>0</priority>
   </url>
   

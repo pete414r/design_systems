@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on My New Hugo Site</title>
+    <title>Home on Hugo design systems</title>
     <link>http://systematik.siavonbulow.dk/</link>
-    <description>Recent content in Home on My New Hugo Site</description>
+    <description>Recent content in Home on Hugo design systems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Feb 2018 09:02:12 +0100</lastBuildDate>
@@ -17,9 +17,92 @@
       <pubDate>Tue, 06 Feb 2018 15:32:48 +0100</pubDate>
       
       <guid>http://systematik.siavonbulow.dk/dokumentation/lightbox/</guid>
-      <description>Her vises et eksempel på brugen af Lightbox
-
-[![bjerge](/img/yellowstone.jpg)](/img/yellowstone.jpg)</description>
+      <description>Lightbox i theme, klik på billedet  [![campus](/img/pete414r.jpg)](/img/pete414r.jpg)</description>
+    </item>
+    
+    <item>
+      <title>Tags Kategorier HumØr</title>
+      <link>http://systematik.siavonbulow.dk/blog/blog1/</link>
+      <pubDate>Mon, 05 Feb 2018 12:10:35 +0100</pubDate>
+      
+      <guid>http://systematik.siavonbulow.dk/blog/blog1/</guid>
+      <description>myVar: &amp;ldquo;myValue for dir2 single&amp;rdquo; det her er blog1  {{ $var4 := &amp;ldquo;dog&amp;rdquo;}} {{ $var5 := &amp;ldquo;cat&amp;rdquo;}} {{if eq $var4 $var5}} true {{else}} false {{end}}
+eq equel to lt les then le les then equel to gt grater than ge grater than equel to not not donyt engage Copyright Holder All Rights Reserved. {{ $var1 := &amp;quot;1&amp;quot;}} {{ $var2 := &amp;quot;2&amp;quot;}} {{ $var3 := &amp;quot;3&amp;quot;}} {{if and (lt $var1 $var2) (lt $var1 $var3)}} True {{else}} False {{end}}&amp;lt;/p&amp;gt;  </description>
+    </item>
+    
+    <item>
+      <title>blog2</title>
+      <link>http://systematik.siavonbulow.dk/blog/blog2/</link>
+      <pubDate>Mon, 05 Feb 2018 12:10:35 +0100</pubDate>
+      
+      <guid>http://systematik.siavonbulow.dk/blog/blog2/</guid>
+      <description>det her er blog2</description>
+    </item>
+    
+    <item>
+      <title>blog3</title>
+      <link>http://systematik.siavonbulow.dk/blog/blog3/</link>
+      <pubDate>Mon, 05 Feb 2018 12:10:35 +0100</pubDate>
+      
+      <guid>http://systematik.siavonbulow.dk/blog/blog3/</guid>
+      <description>det her er blog3</description>
+    </item>
+    
+    <item>
+      <title>gallari</title>
+      <link>http://systematik.siavonbulow.dk/blog/gallari/</link>
+      <pubDate>Mon, 05 Feb 2018 11:06:21 +0100</pubDate>
+      
+      <guid>http://systematik.siavonbulow.dk/blog/gallari/</guid>
+      <description> ! [alt tekst] &amp;mdash;-&amp;gt; (billede jpg)  </description>
+    </item>
+    
+    <item>
+      <title>post1</title>
+      <link>http://systematik.siavonbulow.dk/blog/post1/</link>
+      <pubDate>Mon, 05 Feb 2018 11:06:21 +0100</pubDate>
+      
+      <guid>http://systematik.siavonbulow.dk/blog/post1/</guid>
+      <description>se video fra youtube</description>
+    </item>
+    
+    <item>
+      <title>post2</title>
+      <link>http://systematik.siavonbulow.dk/blog/post2/</link>
+      <pubDate>Mon, 05 Feb 2018 10:57:43 +0100</pubDate>
+      
+      <guid>http://systematik.siavonbulow.dk/blog/post2/</guid>
+      <description>this is Static this is Static
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare id leo ac cursus. Mauris consequat pulvinar velit vel rhoncus. Nullam aliquet turpis eu velit fermentum mattis. Vivamus sapien libero, bibendum eu ultrices ac, elementum sit amet velit. Integer dapibus sit amet libero finibus vulputate. Aenean volutpat ultricies venenatis. Quisque vitae turpis id erat volutpat rhoncus id vel magna. Donec venenatis sed massa non condimentum.</description>
+    </item>
+    
+    <item>
+      <title>post3</title>
+      <link>http://systematik.siavonbulow.dk/blog/post3/</link>
+      <pubDate>Mon, 05 Feb 2018 10:38:35 +0100</pubDate>
+      
+      <guid>http://systematik.siavonbulow.dk/blog/post3/</guid>
+      <description>this is a OM
+{{ truncate 15 &amp;ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare id leo ac cursus. Mauris consequat pulvinar velit vel rhoncus. Nullam aliquet turpis eu velit fermentum mattis. Vivamus sapien libero, bibendum eu ultrices ac, elementum sit amet velit.&amp;rdquo;}}</description>
+    </item>
+    
+    <item>
+      <title>post9</title>
+      <link>http://systematik.siavonbulow.dk/blog/post9/</link>
+      <pubDate>Mon, 05 Feb 2018 10:36:48 +0100</pubDate>
+      
+      <guid>http://systematik.siavonbulow.dk/blog/post9/</guid>
+      <description>this is a blog</description>
+    </item>
+    
+    <item>
+      <title>post8</title>
+      <link>http://systematik.siavonbulow.dk/blog/post8/</link>
+      <pubDate>Mon, 05 Feb 2018 09:58:48 +0100</pubDate>
+      
+      <guid>http://systematik.siavonbulow.dk/blog/post8/</guid>
+      <description>Hey there
+{{.Params.myVar}}</description>
     </item>
     
     <item>
@@ -28,9 +111,9 @@
       <pubDate>Thu, 01 Feb 2018 08:53:38 +0100</pubDate>
       
       <guid>http://systematik.siavonbulow.dk/dokumentation/typografi/</guid>
-      <description> I mit framework har jeg valgt at bruge en font der hedder Lora sans serif til overskrifter og brødtekst.
-Curabitur vehicula metus nibh, at consectetur massa vehicula id. Vivamus tristique ante ut erat porttitor, in mollis libero molestie. Fusce turpis est, viverra eu pharetra sit amet, cursus vitae erat. Curabitur malesuada sem erat, ut mollis massa ullamcorper nec.
-Typografisk hierarki Overskrift 1 Overskrift 1 Overskrift 1 Overskrift 1 Overskrift 1 Overskrift 1 </description>
+      <description>Play, Arial sans serif til overskrifter og brødtekst.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare id leo ac cursus. Mauris consequat pulvinar velit vel rhoncus.
+Typografisk hierarki</description>
     </item>
     
     <item>
@@ -39,7 +122,9 @@ Typografisk hierarki Overskrift 1 Overskrift 1 Overskrift 1 Overskrift 1 Overskr
       <pubDate>Thu, 01 Feb 2018 08:53:22 +0100</pubDate>
       
       <guid>http://systematik.siavonbulow.dk/dokumentation/farver/</guid>
-      <description>I dette framework kan du se hvilke farver jeg har anvendt.</description>
+      <description>Farver i themet
+Primære farver
+Sekundære farver</description>
     </item>
     
     <item>
@@ -48,10 +133,10 @@ Typografisk hierarki Overskrift 1 Overskrift 1 Overskrift 1 Overskrift 1 Overskr
       <pubDate>Thu, 01 Feb 2018 08:53:22 +0100</pubDate>
       
       <guid>http://systematik.siavonbulow.dk/dokumentation/buttons/</guid>
-      <description>I dette framework kan du lave knapper ved at tilføje classen Buttons
-&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;btns&amp;quot;&amp;gt;knaptekst&amp;lt;/a&amp;gt;
+      <description>Tilføj classen buttons i theme
+&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;btns&amp;quot;&amp;gt;knaptxt&amp;lt;/a&amp;gt;
 Resultatet giver en knap som følgende:
-Knaptekst</description>
+Knaptxt</description>
     </item>
     
   </channel>
