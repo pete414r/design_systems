@@ -1,7 +1,7 @@
 ---
 title: "post2"
 date: 2018-02-05T10:57:43+01:00
-draft: true
+
 author: "Pete414r"
 tags: ["tag2"]
 categories: ["Video og tekst"]

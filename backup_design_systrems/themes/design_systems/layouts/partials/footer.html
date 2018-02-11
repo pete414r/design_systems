@@ -1,0 +1,33 @@
+              <footer class="row middle-xs center-xs" id="om">
+            {{ if .Site.Params.github }}
+            <div class="col-xs-3 col-md-2"><a href="https://github.com/{{ .Site.Params.github }}">GitHub</a></div>
+            {{ end }}
+            {{ if .Site.Params.linkedin }}
+            <div class="col-xs-3 col-md-2"><a href="https://instagram.com/{{ .Site.Params.linkedin }}">Instagram</a></div>
+            {{ end }}
+            {{ if .Site.Params.twitter }}
+            <div class="col-xs-3 col-md-2"><a href="https://facebook.com/{{ .Site.Params.twitter }}">Facebook</a></div>
+            {{ end }}
+            {{ if or (.Site.Params.copyright) (.Site.Params.credit) }}
+            <div class="col-xs-12">
+                {{ if .Site.Params.copyright }}
+                Copyright &copy; {{ now.Format "2006" }} {{ .Site.Title }}.
+                {{ end }}
+            </div>
+            {{ end }}
+
+
+            <!-- Script -->
+                        {{ if .IsHome }}
+                        <script src="/scripts/{{ if .Site.Params.cacheBustJS }}{{ index .Site.Data.cachedAssets "index.js" }}{{ else }}index.js{{ end }}" type="text/javascript"></script>
+
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+            <script src="{{.Site.BaseURL}}js/nivo-lightbox.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+            <script src="{{.Site.BaseURL}}js/scripts.js"></script>
+
+        </footer>
+    </body>
+</html>
