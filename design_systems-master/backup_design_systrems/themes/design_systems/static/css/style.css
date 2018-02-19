@@ -1,0 +1,322 @@
+
+body nav {
+    position: fixed;
+    height: 192px;
+    width: 192px;
+    background-color: whitesmoke;
+}
+h1 {
+	padding-top: 1vw;
+}
+.container {
+	    margin-top: 5vw;
+}
+@media screen and (max-width: 992px) {
+    body nav {
+        position: fixed;
+        display: flex;
+        justify-content:space-between;
+        height: 64px;
+        width: 88vw;
+    }
+		img {
+			display: none;
+		}
+	}
+
+body {
+	margin-left: 30%;
+	margin-right: 20%;
+}
+a.sidebar-nav-item {
+	margin-left: 2vw;
+		margin-right: 2vw;
+	text-decoration: none;
+}
+.sidebar-nav{
+	top:2vw;
+	left: 5vw;
+}
+.amin {
+	width: 100%;
+	background-image: url(../static/images/pete414r.png);
+	-webkit-animation: 5s anim infinite;
+	animation: 5s anim infinite
+}
+
+@-webkit-keyframes "anim" {
+	from,
+	to {
+		color: transparent
+	}
+	50% {
+		color: #626262
+	}
+}
+
+@keyframes "anim" {
+	from,
+	to {
+		color: transparent
+	}
+	50% {
+		color: #626262
+	}
+}
+
+img {
+	width: 25%;
+}
+
+.container,
+.container-fluid {
+	padding: 0;
+	width: 100%;
+}
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+/*
+3: Typografi
+*/
+
+/*Modular scale - http://type-scale.com/ */
+
+html {
+	font-size: calc(0.5em + 1vw);
+}
+
+body {
+	background-color: #DDD;
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	line-height: 1.45;
+	color: #333;
+}
+
+p {
+	margin-bottom: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 1.414em 0 0.5em;
+	font-weight: inherit;
+	line-height: 1.2;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color: #3cb7a9;
+	font-weight: 800;
+	word-wrap: break-word;
+	display: block;
+	width: 100%;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 2.074em;
+}
+
+h2 {
+	font-size: 1.728em;
+}
+
+h3 {
+	font-size: 1.44em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+small,
+.font_small {
+	font-size: 0.833rem;
+}
+
+p,
+form {
+	box-sizing: border-box;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover {
+	color: #236a62;
+}
+
+/*
+4: HTML elementer
+*/
+
+/*
+5: Billeder/medier
+*/
+
+img {
+	max-width: 100%;
+}
+
+/*Buttons*/
+
+.btns {
+	background-color: #3cb7a9;
+	padding: 1rem;
+}
+
+/*
+11: Media queries
+*/
+
+/*Media queries til tablet - 768px v 16px font*/
+
+@media only screen and (min-width: 48em) {
+	html {
+		font-size: calc(0.80em + 1.4vw);
+	}
+
+	.container {
+		width: 94%;
+	}
+}
+
+/*Media queries til mindre computer - 1024px v 16px font*/
+
+@media only screen and (min-width: 64em) {
+	html {
+		font-size: calc(0.6em + 1.1vw);
+	}
+
+	.container {
+		width: 96%;
+	}
+}
+
+/*Media queries til laptop/desktop - 1200px v 16px font*/
+
+@media only screen and (min-width: 75em) {
+	html {
+		font-size: calc(0.6em + 1.1vw);
+	}
+
+	.container {
+		width: 96%;
+	}
+}
+
+/*Ekstra queries til meget stor særm - 1600px v 16px font*/
+
+@media only screen and (min-width: 100em) {
+	html {
+		font-size: calc(0.8em + 0.6vw);
+	}
+
+	.container {
+		width: 1400px;
+	}
+}
+
+/*Menu*/
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+/*Formular*/
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+textarea {
+	height: 200px;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+h1 a{
+	display: block;
+}
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	max-width: 800px;
+}
+
+.hidden {
+	display: none;
+}
+#formfailure {
+	background-color: red;
+	padding: 1em;
+}
+
+/*# sourceMappingURL=style.css.map */

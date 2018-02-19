@@ -1,0 +1,24 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Prf doc statisk site"
+theme = "ga-hugo-theme"
+[taxonomies]
+tag = "tags"
+category = "categories"
+mood = "moods"
+[[menu.main]]
+    name = "HOME"
+    url  = "/#home"
+    weight = 1
+[[menu.main]]
+name = "BLOG"
+url  = "/#blog"
+weight = 2
+[[menu.main]]
+name = "KONTAKT"
+url  = "/#kontakt"
+weight = 3
+[[menu.main]]
+    name = "OM"
+    url  = "/#om"
+    weight = 4

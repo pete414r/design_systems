@@ -1,0 +1,25 @@
+@media (min-width: 375px) {
+  html{
+    background-color: red;
+  }
+
+body {
+display: none;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1900px) {
+  background-color:whitesmoke;
+  color:whitesmoke;
+  font-size:1.4vw;
+  font-family:arial;
+  margin-left:30%;
+  margin-right:20%;
+}

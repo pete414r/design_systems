@@ -1,0 +1,52 @@
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="row center-xs">
+            <div class="col-xs-12"><h1>Seneste indlæg</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 posts-list">
+                {{ range first 2 (where .Data.Pages "Section" "blog") }}
+                    <article>
+                        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                        <div class=sub-header>
+                          {{ $var4 := "dog"}}
+                              {{ $var5 := "cat"}}
+                              {{if eq $var4 $var5}}
+                              true
+                              {{else}}
+                              false
+                              {{end}}
+
+                              eq equel to
+                              lt les then
+                              le les then equel to
+                              gt grater than
+                              ge grater than equel to
+                              not not donyt engage
+                              Copyright Holder All Rights Reserved.
+
+                              {{ $var1 := "1"}}
+                              {{ $var2 := "2"}}
+                              {{ $var3 := "3"}}
+                              {{if and (lt $var1 $var2) (lt $var1 $var3)}}
+                              True
+                              {{else}}
+                              False                        </div>
+                    </article>
+                {{ end }}
+            </div>
+        </div>
+        <div class="row center-xs">
+            <div class="col-xs-12"><h3><a href="{{ .Site.BaseURL }}/blog/">Se alle</a></h3></div>
+        </div>
+    </div>
+</section>
+
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="{{.Site.BaseURL}}js/nivo-lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="{{.Site.BaseURL}}js/scripts.js"></script>

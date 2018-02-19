@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<div id="home"></div>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+
+        <title>
+          
+                {{ .Site.Title }}
+
+        </title>
+        <meta name="title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end}}">
+        <meta charset="utf-8">
+        <base href="{{ .Site.BaseURL }}">
+        {{ if .Site.Params.author }}<meta name="author" content="{{ .Site.Params.author }}">{{ end }}
+        <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}/styles/{{ if .Site.Params.cacheBustCSS }}{{ index .Site.Data.cachedAssets "main.css" }}{{ else }}main.css{{ end }}" type="text/css">
+        {{ if .Site.Params.customCSS }}{{ partial "css.html" . }}{{ end }}
+    </head>
+
+    <body>
+          {{ if .IsHome }}
+        <header class="row middle-xs center-xs">
+            <div class="col-xs-12">
+                <div class="row middle-xs center-xs">
+                    <div class="col-xs-12"><img src="{{ .Site.Params.logoBig}}" alt="{{ .Site.Title }}"></div>
+                </div>
+                <div class="row middle-xs center-xs">
+                    <div class="col-xs-12"><h1>{{ .Site.Params.tagline }}<span class="amin">DESIGN SYSTEMS</span></h1></div>
+                </div>
+            </div>
+        </header>
+        {{ end }}
+
+        <nav class="row middle-xs center-xs">
+            <div class="col-xs-6 col-sm-1 logo">
+                <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logoSmall }}" alt="{{ .Site.Title }}"></a>
+            </div>
+            {{ range .Site.Menus.main }}
+            <div class="col-xs-3 col-sm-2"><h3><a href="{{ .URL }}">{{ .Name }}</a></h3></div>
+            {{ end }}
+            <div class="col-xs-6 col-sm-1 nav-toggle">
+                <a href="" class="nav-icon" onclick="return false"><img src="images/icon-menu.png" alt="Open Menu"><img src="images/icon-x.png" alt="Close Menu" style="display: none;"></a>
+            </div>
+        </nav>
+        <section class="nav-full row middle-xs center-xs">
+            <div class="col-xs-12">
+                <div class="row middle-xs center-xs">
+                    {{ range .Site.Menus.main }}
+                    <div class="col-xs-12"><h1><a href="{{ .URL }}">{{ .Name }}</a></h1></div>
+                    {{ end }}
+                </div>
+            </div>
+        </section>
+        <main>

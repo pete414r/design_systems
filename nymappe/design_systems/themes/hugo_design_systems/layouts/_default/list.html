@@ -1,0 +1,41 @@
+{{ partial "header.html" . }}
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="row center-xs">
+                <div class="col-xs-12"><h1>{{ humanize .Type }}</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 posts-list">
+                    {{ range .Data.Pages }}
+                        <article>
+                            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                            <div class=sub-header>
+                              <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
+                                             <div style="color:grey; font-size:16px;">{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+                                             <div style="color:grey; font-size:16px;">{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+                                             <div style="color:grey; font-size:16px;">{{ if .Params.moods }}<strong>Moods:</strong> {{range .Params.moods}}<a href="{{ "/moods/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
+                            </div>
+                        </article>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+<h1 class="cooking">Cooking in progress..</h1>
+<div id="cooking">
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div id="area">
+    <div id="sides">
+      <div id="pan"></div>
+      <div id="handle"></div>
+    </div>
+    <div id="pancake">
+      <div id="pastry"></div>
+    </div>
+  </div>
+</div>
+{{ partial "footer.html" . }}

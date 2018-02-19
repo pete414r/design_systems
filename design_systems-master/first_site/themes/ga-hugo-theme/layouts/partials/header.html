@@ -1,0 +1,10 @@
+<nav class="sidebar-nav">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logoSmall }}" alt="{{ .Site.Title }}"></a>
+      {{ range .Site.Menus.main }}
+      <div class="col-xs-3 col-sm-2"><h3><a href="{{ .URL }}">{{ .Name }}</a></h3></div>
+          {{ end }}
+</nav>
+
+<p>nacvv</p>

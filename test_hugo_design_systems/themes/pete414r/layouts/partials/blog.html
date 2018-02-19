@@ -1,0 +1,22 @@
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="row center-xs">
+            <div class="col-xs-12"><h1>Seneste indlæg</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 posts-list">
+                {{ range first 2 (where .Data.Pages "Section" "blog") }}
+                    <article>
+                        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                        <div class=sub-header>
+                          <div class="date" title='{{ .Date.Format "Mon Jan 2 2006 15:04:05 MST" }}'>{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} minute read </div>
+                        </div>
+                    </article>
+                {{ end }}
+            </div>
+        </div>
+        <div class="row center-xs">
+            <div class="col-xs-12"><h3><a href="{{ .Site.BaseURL }}/blog/">Se alle</a></h3></div>
+        </div>
+    </div>
+</section>
