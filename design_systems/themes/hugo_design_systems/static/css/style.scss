@@ -7,7 +7,6 @@ $accentcolorlight: lighten($accentcolor, 20%);
 $positivecolor: green;
 $negativecolor: red;
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
-
 body {
 	font-family: "Lora", sans-serif;
 	font-weight: 400;
@@ -128,7 +127,7 @@ h1 {
 }
 h2 {
 	font-size: 2.5em;
-	color: #404040;
+	color: crimson;
 }
 h3 {
 	font-size: 1.999em;
