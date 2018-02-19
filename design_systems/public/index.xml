@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Hugo design systems</title>
+    <title>Home on Design systems</title>
     <link>http://www.prfrankild.dk/sem3/design_systems/</link>
-    <description>Recent content in Home on Hugo design systems</description>
+    <description>Recent content in Home on Design systems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Feb 2018 09:02:12 +0100</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Tue, 06 Feb 2018 15:32:48 +0100</pubDate>
       
       <guid>http://www.prfrankild.dk/sem3/design_systems/dokumentation/lightbox/</guid>
-      <description>Lightbox i theme, klik på billedet </description>
+      <description>Lightbox i theme, klik på billedet  [![campus](/img/pete414r.jpg)](/img/pete414r.jpg)</description>
     </item>
     
     <item>

@@ -83,11 +83,12 @@ js.src = 'https://connect.facebook.net/da_DK/sdk.js#xfbml=1&version=v2.11';
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-function logo_func() {
-    console.log("logo funk kører");
-    $("#logo-move").show();
-    $("#logo-move").addClass("logo_start_move");
-    $("#logo-walkcycle").addClass("logo_start_walk");
+function gut_func() {
+    console.log("gut funk kører");
+    $("#gut-move").show();
+    $("#gut-move").addClass("gut_start_move");
+    $("#gut-walkcycle").addClass("gut_start_walk");
 }
 
-$(".Logo_anim").on("click", logo_func);
+var harklikketpaablaa;
+$(".Logo_anim").on("click", gut_func);

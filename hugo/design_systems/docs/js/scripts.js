@@ -81,4 +81,14 @@ js = d.createElement(s);
 js.id = id;
 js.src = 'https://connect.facebook.net/da_DK/sdk.js#xfbml=1&version=v2.11';
 fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk')); 
+}(document, 'script', 'facebook-jssdk'));
+
+function gut_func() {
+    console.log("gut funk kører");
+    $("#gut-move").show();
+    $("#gut-move").addClass("gut_start_move");
+    $("#gut-walkcycle").addClass("gut_start_walk");
+}
+
+var harklikketpaablaa;
+$(".Logo_anim").on("click", gut_func);
