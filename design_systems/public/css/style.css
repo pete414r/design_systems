@@ -1,5 +1,5 @@
 /*generalt*/
-@import url("https://fonts.googleapis.com/css?family=Play");
+@import url("https://fonts.googleapis.com/css?family=play");
 body {
     overflow-x: hidden;
   width: 90%;
@@ -9,64 +9,59 @@ body {
   color: #333;
   background-color: whitesmoke; }
 
-  .main {
-      position: relative;
-  }
-  .main img {
-      width: 100%;
-  }
+.main {
+    position: relative;
+}
+.main img {
+    width: 100%;
+}
 
-    #gut-move {
-      display: none;
-    opacity: 0.20;
-              left: 100vw;
-              top: -26vw;
-              z-index: 0;
-              position: absolute;
-              background-size: 100%;
-          }
-          .gut_start_move {
-              animation: gut-move_kf;
-              animation-timing-function: cubic-bezier(.08, .08, .08, .08);
-              animation-direction: normal;
-              animation-fill-mode: both;
-              animation-duration: 12s;
-          }
-          #gut-walkcycle {
-              overflow: hidden;
-              background: url(../img/campus-01.svg);
-              width: 250vw;
-              height: 120vw;
-              background-size: 1000vw 120vw;
-          }
+  #gut-move {
+    display: none;
+  opacity: 0.20;
+            left: 100vw;
+            top: -26vw;
+            z-index: 0;
+            position: absolute;
+            background-size: 100%;
+        }
+        .gut_start_move {
+            animation: gut-move_kf;
+            animation-timing-function: cubic-bezier(.08, .08, .08, .08);
+            animation-direction: normal;
+            animation-fill-mode: both;
+            animation-duration: 12s;
+        }
+        #gut-walkcycle {
+            overflow: hidden;
+            background: url(../img/campus-01.svg);
+            width: 250vw;
+            height: 120vw;
+            background-size: 1000vw 120vw;
+        }
 
-          .gut_start_walk {
-              overflow: hidden;
-              animation: gut-walkcycle_kf 1s steps(10) 22;
-          }
-          @keyframes gut-walkcycle_kf {
-              0% {
-                  background-position: 0vw;
-              }
-              100% {
-                  background-position: -1000vw;
-              }
-          }
-          @keyframes gut-move_kf {
-              0% {
-                  left: 120vw;
-              }
-              100% {
-                  left: -10vw;
-              }
-          }
-          .blaa {
-                    color: : rgba(255, 236, 89);
-                    }
+        .gut_start_walk {
+            overflow: hidden;
+            animation: gut-walkcycle_kf 1s steps(10) 22;
+        }
+        @keyframes gut-walkcycle_kf {
+            0% {
+                background-position: 0vw;
+            }
+            100% {
+                background-position: -1000vw;
+            }
+        }
+        @keyframes gut-move_kf {
+            0% {
+                left: 120vw;
+            }
+            100% {
+                left: -10vw;
+            }
+        }
 
-                    .roed {
-                 color: : rgba(255, 124, 124);
-                    }
+      
 span {
   margin-left: 20px; }
 
