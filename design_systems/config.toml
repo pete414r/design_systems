@@ -2,7 +2,7 @@ baseURL = "http://www.prfrankild.dk/sem3/design_systems/"
 languageCode = "en-us"
 title = "Hugo design systems"
 theme = "hugo_design_systems"
-publishDir = "docs"
+publishDir = "public"
 
 [taxonomies]
   tag = "tags"
